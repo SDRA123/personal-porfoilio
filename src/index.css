@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply snap-y snap-mandatory scroll-smooth;
+  }
+
+  body {
+    @apply bg-slate-900 text-slate-400 font-sans leading-relaxed selection:bg-teal-300 selection:text-teal-900 antialiased;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 border-4 border-slate-900 rounded-full;
+}
