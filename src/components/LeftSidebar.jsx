@@ -78,20 +78,20 @@ const LeftSidebar = () => {
                 </nav>
             </div>
 
-            <ul className="mt-8 flex items-center justify-center lg:justify-start lg:ml-1" aria-label="Social media">
-                <li className="mr-5 text-xs">
+            <ul className="mt-8 flex items-center justify-center lg:justify-start gap-5" aria-label="Social media">
+                <li className="text-xs">
                     <a className="block hover:text-slate-200" href={userData.socialLinks.github} target="_blank" rel="noreferrer">
                         <span className="sr-only">GitHub</span>
                         <Github className="h-6 w-6" />
                     </a>
                 </li>
-                <li className="mr-5 text-xs">
+                <li className="text-xs">
                     <a className="block hover:text-slate-200" href={userData.socialLinks.linkedin} target="_blank" rel="noreferrer">
                         <span className="sr-only">LinkedIn</span>
                         <Linkedin className="h-6 w-6" />
                     </a>
                 </li>
-                <li className="mr-5 text-xs">
+                <li className="text-xs">
                     <a className="block hover:text-slate-200" href={userData.socialLinks.email} target="_blank" rel="noreferrer">
                         <span className="sr-only">Email</span>
                         <Mail className="h-6 w-6" />

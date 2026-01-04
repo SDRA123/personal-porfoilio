@@ -46,9 +46,9 @@ const RightContent = () => {
                                             {job.description}
                                         </p>
                                         {job.links && (
-                                            <ul className="mt-2 flex flex-wrap justify-center lg:justify-start" aria-label="Related links">
+                                            <ul className="mt-2 flex flex-wrap justify-center lg:justify-start gap-4" aria-label="Related links">
                                                 {job.links.map(link => (
-                                                    <li key={link.name} className="mr-4">
+                                                    <li key={link.name}>
                                                         <a className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href={link.url} target="_blank" rel="noreferrer">
                                                             <ExternalLink className="mr-1 h-3 w-3" />
                                                             <span>{link.name}</span>
@@ -57,9 +57,9 @@ const RightContent = () => {
                                                 ))}
                                             </ul>
                                         )}
-                                        <ul className="mt-2 flex flex-wrap justify-center lg:justify-start" aria-label="Technologies used">
+                                        <ul className="mt-2 flex flex-wrap justify-center lg:justify-start gap-2" aria-label="Technologies used">
                                             {job.skills.map(skill => (
-                                                <li key={skill} className="mr-1.5 mt-2">
+                                                <li key={skill} className="mt-2">
                                                     <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                                                         {skill}
                                                     </div>
@@ -98,9 +98,9 @@ const RightContent = () => {
                                             {project.description}
                                         </p>
 
-                                        <ul className="mt-2 flex flex-wrap justify-center lg:justify-start" aria-label="Technologies used">
+                                        <ul className="mt-2 flex flex-wrap justify-center lg:justify-start gap-2" aria-label="Technologies used">
                                             {project.tech.map(tech => (
-                                                <li key={tech} className="mr-1.5 mt-2">
+                                                <li key={tech} className="mt-2">
                                                     <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
                                                         {tech}
                                                     </div>
